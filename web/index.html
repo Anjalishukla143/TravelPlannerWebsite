@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Travel Planner</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<section class="hero">
+
+
+<video autoplay muted loop playsinline class="background-video">
+
+<source src="videos/home-background.mp4" type="video/mp4">
+
+</video>
+
+
+<div class="overlay"></div>
+
+
+
+<header>
+
+<div class="logo">
+TRAVEL PLANNER
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#explore">Explore</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+
+<div class="hero-content">
+
+
+<h1>TRAVEL</h1>
+
+<h1>EXPLORE</h1>
+
+<h1>BEGIN</h1>
+
+
+<button onclick="openPlanner()">
+Start Your Trip
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+<section class="quote">
+
+<h2>
+"Travel is the only thing you buy that makes you richer."
+</h2>
+
+</section>
+
+
+
+
+<section class="explore" id="explore">
+
+
+<h2>
+Explore India
+</h2>
+
+
+
+<div class="categories">
+
+
+<button class="active">
+All
+</button>
+
+
+<button>
+Beach
+</button>
+
+
+<button>
+Hill Station
+</button>
+
+
+<button>
+Spiritual
+</button>
+
+
+<button>
+Historical
+</button>
+
+
+<button>
+Adventure
+</button>
+
+
+<button>
+City
+</button>
+
+
+</div>
+
+
+
+<div class="video-grid">
+
+
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Goa')">
+
+<video src="videos/goa.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Goa
+</div>
+
+</div>
+
+
+
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Manali')">
+
+<video src="videos/manali.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Manali
+</div>
+
+</div>
+
+
+
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Kashmir')">
+
+<video src="videos/kashmir.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Kashmir
+</div>
+
+</div>
+
+
+
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Rajasthan')">
+
+<video src="videos/rajasthan.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Rajasthan
+</div>
+
+</div>
+<!-- Delhi -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Delhi')">
+
+<video src="videos/delhi.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Delhi
+</div>
+
+</div>
+
+
+
+
+<!-- Mumbai -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Mumbai')">
+
+<video src="videos/mumbai.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Mumbai
+</div>
+
+</div>
+
+
+
+
+<!-- Kerala -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Kerala')">
+
+<video src="videos/kerala.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Kerala
+</div>
+
+</div>
+
+
+
+
+<!-- Varanasi -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Varanasi')">
+
+<video src="videos/varanasi.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Varanasi
+</div>
+
+</div>
+
+
+
+
+<!-- Andaman -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Andaman')">
+
+<video src="videos/andaman.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Andaman
+</div>
+
+</div>
+
+
+
+
+<!-- Munnar -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Munnar')">
+
+<video src="videos/munnar.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Munnar
+</div>
+
+</div>
+
+
+
+
+<!-- Himachal -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Himachal')">
+
+<video src="videos/himachal.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Himachal
+</div>
+
+</div>
+
+
+
+
+<!-- Bastar -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Bastar')">
+
+<video src="videos/bastar.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Bastar
+</div>
+
+</div>
+
+
+
+
+<!-- Banaras -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Banaras')">
+
+<video src="videos/banaras.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Banaras
+</div>
+
+</div>
+<!-- Tamil Nadu -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Tamil Nadu')">
+
+<video src="videos/tamilnadu.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Tamil Nadu
+</div>
+
+</div>
+
+
+
+
+<!-- Jaipur -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Jaipur')">
+
+<video src="videos/jaipur.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Jaipur
+</div>
+
+</div>
+
+
+
+
+<!-- Udaipur -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Udaipur')">
+
+<video src="videos/udaipur.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Udaipur
+</div>
+
+</div>
+
+
+
+
+<!-- Agra -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Agra')">
+
+<video src="videos/agra.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Agra
+</div>
+
+</div>
+
+
+
+
+<!-- Rishikesh -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Rishikesh')">
+
+<video src="videos/rishikesh.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Rishikesh
+</div>
+
+</div>
+
+
+
+
+<!-- Ladakh -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Ladakh')">
+
+<video src="videos/ladakh.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Ladakh
+</div>
+
+</div>
+
+
+
+
+<!-- Sikkim -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Sikkim')">
+
+<video src="videos/sikkim.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Sikkim
+</div>
+
+</div>
+
+
+
+
+<!-- Meghalaya -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Meghalaya')">
+
+<video src="videos/meghalaya.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Meghalaya
+</div>
+
+</div>
+
+
+
+
+<!-- Goa Night -->
+
+<div class="video-card"
+onclick="openPlannerWithDestination('Goa')">
+
+<video src="videos/goa-night.mp4" muted loop autoplay></video>
+
+<div class="video-title">
+Goa Night Life
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="about">
+
+<h2>
+About Travel Planner
+</h2>
+
+
+<p>
+
+Explore India with smart planning.
+Find destinations, create trips and travel better.
+
+</p>
+
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+
+<h3>
+Travel Planner
+</h3>
+
+
+<p>
+
+Explore India • Plan Better • Travel Smarter
+
+</p>
+
+
+</footer>
+
+
+
+
+<!-- JavaScript -->
+
+
+<script src="js/destinations.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/planner.js"></script>
+
+
+</body>
+
+
+</html>

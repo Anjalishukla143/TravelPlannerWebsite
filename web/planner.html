@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Plan Your Trip</title>
+
+    <link rel="stylesheet" href="css/planner.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Background Video -->
+
+<video autoplay muted loop class="background-video">
+
+    <source src="videos/planner-background.mp4" type="video/mp4">
+
+</video>
+
+
+<div class="overlay"></div>
+
+
+
+<div class="planner-container">
+
+
+<h1>Plan Your Trip </h1>
+
+
+<form id="plannerForm">
+
+
+<input 
+type="text" 
+id="destination" 
+placeholder="Enter Destination"
+>
+
+
+<input 
+type="number" 
+placeholder="Number of Days"
+>
+
+
+<input 
+type="number" 
+placeholder="Budget (₹)"
+>
+
+
+
+<select>
+
+<option>Select Travel Mode</option>
+
+<option>Flight</option>
+
+<option>Train</option>
+
+<option>Car</option>
+
+<option>Bike</option>
+
+</select>
+
+
+
+<select>
+
+<option>Select Travel Type</option>
+
+<option>Solo</option>
+
+<option>Family</option>
+
+<option>Friends</option>
+
+</select>
+
+
+
+<select>
+
+<option>Food Preference</option>
+
+<option>Veg</option>
+
+<option>Non-Veg</option>
+
+<option>Both</option>
+
+</select>
+
+
+
+<button type="submit">
+
+Generate Plan
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+<script src="data/places.js"></script>
+<script src="js/planner.js"></script>
+
+
+</body>
+
+</html>
