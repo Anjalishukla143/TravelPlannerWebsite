@@ -42,8 +42,7 @@ document.getElementById("plannerForm").addEventListener("submit", function(e){
 
     e.preventDefault();
 
-
-    let destination = document.getElementById("destination").value;
+let destination = document.getElementById("destination").value.trim().toLowerCase();
 console.log("Form Destination:", destination);
 
     let days = document.querySelectorAll("input")[1].value;

@@ -1,8 +1,9 @@
 console.log("FINAL RESULT JS WORKING");
 
 
-const destination =
-(localStorage.getItem("destination") || "Goa").trim();
+const destination = (localStorage.getItem("destination") || "goa")
+  .trim()
+  .toLowerCase();
 
 console.log("Selected Destination:", destination);
 
@@ -23,7 +24,7 @@ localStorage.getItem("food") || "Veg";
 const placesData = {
 
 
-Goa: {
+goa: {
 
 title:"Goa Trip Plan",
 
@@ -77,7 +78,7 @@ budget:
 
 
 
-Manali: {
+manali: {
 
 
 title:"Manali Trip Plan",
@@ -170,7 +171,7 @@ budget:"₹8000 - ₹25000"
 },
 
 
-Mumbai: {
+mumbai: {
 
 title:"Mumbai Trip Plan",
 
@@ -213,7 +214,7 @@ budget:"₹10000 - ₹30000"
 },
 
 
-Bangalore: {
+bangalore: {
 
 title:"Bangalore Trip Plan",
 
@@ -256,7 +257,7 @@ budget:"₹9000 - ₹28000"
 },
 
 
-Kolkata: {
+kolkata: {
 
 title:"Kolkata Trip Plan",
 
@@ -299,7 +300,7 @@ budget:"₹8000 - ₹22000"
 },
 
 
-Chennai: {
+chennai: {
 
 title:"Chennai Trip Plan",
 
@@ -342,11 +343,11 @@ budget:"₹8000 - ₹25000"
 },
 
 
-Hyderabad: {
+hyderabad: {
 
 title:"Hyderabad Trip Plan",
 
-video:"videos/hyderabad.mp4",
+video:"videos/hyderabad.city.mp4",
 
 places:[
 "Charminar",
@@ -385,7 +386,7 @@ budget:"₹9000 - ₹26000"
 },
 
 
-Pune: {
+pune: {
 
 title:"Pune Trip Plan",
 
@@ -428,7 +429,7 @@ budget:"₹8000 - ₹24000"
 },
 
 
-Udaipur: {
+udaipur: {
 
 title:"Udaipur Trip Plan",
 
@@ -471,7 +472,7 @@ budget:"₹12000 - ₹40000"
 },
 
 
-Jaisalmer: {
+jaisalmer: {
 
 title:"Jaisalmer Trip Plan",
 
@@ -514,7 +515,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Jodhpur: {
+jodhpur: {
 
 title:"Jodhpur Trip Plan",
 
@@ -598,7 +599,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Varanasi: {
+varanasi: {
 
 title:"Varanasi Trip Plan",
 
@@ -684,7 +685,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Mussoorie: {
+mussoorie: {
 
 title:"Mussoorie Trip Plan",
 
@@ -727,7 +728,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Shimla: {
+shimla: {
 
 title:"Shimla Trip Plan",
 
@@ -770,7 +771,7 @@ budget:"₹12000 - ₹40000"
 },
 
 
-Dharamshala: {
+dharamshala: {
 
 title:"Dharamshala Trip Plan",
 
@@ -813,7 +814,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Ooty: {
+ooty: {
 
 title:"Ooty Trip Plan",
 
@@ -856,7 +857,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Munnar: {
+munnar: {
 
 title:"Munnar Trip Plan",
 
@@ -899,7 +900,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Kerala: {
+kerala: {
 
 title:"Kerala Trip Plan",
 
@@ -942,7 +943,7 @@ budget:"₹12000 - ₹50000"
 },
 
 
-Andaman: {
+andaman: {
 
 title:"Andaman Trip Plan",
 
@@ -983,7 +984,7 @@ hotels:[
 budget:"₹20000 - ₹70000"
 
 },
-Jaipur: {
+jaipur: {
 
 title:"Jaipur Trip Plan",
 
@@ -1026,7 +1027,7 @@ budget:"₹10000 - ₹40000"
 },
 
 
-Ajmer: {
+ajmer: {
 
 title:"Ajmer Trip Plan",
 
@@ -1069,7 +1070,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Pushkar: {
+pushkar: {
 
 title:"Pushkar Trip Plan",
 
@@ -1112,7 +1113,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-"Mount Abu": {
+"mount Abu": {
 
 title:"Mount Abu Trip Plan",
 
@@ -1155,7 +1156,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Bikaner: {
+bikaner: {
 
 title:"Bikaner Trip Plan",
 
@@ -1198,7 +1199,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Haridwar: {
+haridwar: {
 
 title:"Haridwar Trip Plan",
 
@@ -1241,7 +1242,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Nainital: {
+nainital: {
 
 title:"Nainital Trip Plan",
 
@@ -1282,7 +1283,7 @@ hotels:[
 budget:"₹10000 - ₹35000"
 
 },
-Auli: {
+auli: {
 
 title:"Auli Trip Plan",
 
@@ -1325,7 +1326,7 @@ budget:"₹12000 - ₹40000"
 },
 
 
-Kasol: {
+kasol: {
 
 title:"Kasol Trip Plan",
 
@@ -1368,7 +1369,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Kasauli: {
+kasauli: {
 
 title:"Kasauli Trip Plan",
 
@@ -1411,7 +1412,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-"Leh Ladakh": {
+"leh ladakh": {
 
 title:"Leh Ladakh Trip Plan",
 
@@ -1454,11 +1455,11 @@ budget:"₹25000 - ₹70000"
 },
 
 
-"Spiti Valley": {
+"spiti valley": {
 
 title:"Spiti Valley Trip Plan",
 
-video:"videos/spiti.mp4",
+video:"videos/spitivalley.mp4",
 
 places:[
 "Key Monastery",
@@ -1497,7 +1498,7 @@ budget:"₹20000 - ₹60000"
 },
 
 
-Dalhousie: {
+dalhousie: {
 
 title:"Dalhousie Trip Plan",
 
@@ -1540,7 +1541,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Amritsar: {
+amritsar: {
 
 title:"Amritsar Trip Plan",
 
@@ -1583,7 +1584,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Chandigarh: {
+chandigarh: {
 
 title:"Chandigarh Trip Plan",
 
@@ -1624,7 +1625,7 @@ hotels:[
 budget:"₹9000 - ₹30000"
 
 },
-Lucknow: {
+lucknow: {
 
 title:"Lucknow Trip Plan",
 
@@ -1667,7 +1668,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Mathura: {
+mathura: {
 
 title:"Mathura Trip Plan",
 
@@ -1710,7 +1711,7 @@ budget:"₹6000 - ₹20000"
 },
 
 
-Vrindavan: {
+vrindavan: {
 
 title:"Vrindavan Trip Plan",
 
@@ -1753,7 +1754,7 @@ budget:"₹5000 - ₹20000"
 },
 
 
-Pondicherry: {
+pondicherry: {
 
 title:"Pondicherry Trip Plan",
 
@@ -1796,7 +1797,7 @@ budget:"₹10000 - ₹40000"
 },
 
 
-Coorg: {
+coorg: {
 
 title:"Coorg Trip Plan",
 
@@ -1837,7 +1838,7 @@ hotels:[
 budget:"₹12000 - ₹45000"
 
 },
-Wayanad: {
+wayanad: {
 
 title:"Wayanad Trip Plan",
 
@@ -1880,7 +1881,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Mahabaleshwar: {
+mahabaleshwar: {
 
 title:"Mahabaleshwar Trip Plan",
 
@@ -1923,7 +1924,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Lonavala: {
+lonavala: {
 
 title:"Lonavala Trip Plan",
 
@@ -1966,7 +1967,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Khandala: {
+khandala: {
 
 title:"Khandala Trip Plan",
 
@@ -2009,7 +2010,7 @@ budget:"₹8000 - ₹25000"
 },
 
 
-Nashik: {
+nashik: {
 
 title:"Nashik Trip Plan",
 
@@ -2052,7 +2053,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Ahmedabad: {
+ahmedabad: {
 
 title:"Ahmedabad Trip Plan",
 
@@ -2093,7 +2094,7 @@ hotels:[
 budget:"₹8000 - ₹30000"
 
 },
-Surat: {
+surat: {
 
 title:"Surat Trip Plan",
 
@@ -2136,7 +2137,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Vadodara: {
+vadodara: {
 
 title:"Vadodara Trip Plan",
 
@@ -2179,7 +2180,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Indore: {
+indore: {
 
 title:"Indore Trip Plan",
 
@@ -2222,7 +2223,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Bhopal: {
+bhopal: {
 
 title:"Bhopal Trip Plan",
 
@@ -2265,7 +2266,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Khajuraho: {
+khajuraho: {
 
 title:"Khajuraho Trip Plan",
 
@@ -2308,7 +2309,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Sanchi: {
+sanchi: {
 
 title:"Sanchi Trip Plan",
 
@@ -2351,7 +2352,7 @@ budget:"₹5000 - ₹20000"
 },
 
 
-Darjeeling: {
+darjeeling: {
 
 title:"Darjeeling Trip Plan",
 
@@ -2394,7 +2395,7 @@ budget:"₹12000 - ₹40000"
 },
 
 
-Gangtok: {
+gangtok: {
 
 title:"Gangtok Trip Plan",
 
@@ -2435,7 +2436,7 @@ hotels:[
 budget:"₹12000 - ₹45000"
 
 },
-Shillong: {
+shillong: {
 
 title:"Shillong Trip Plan",
 
@@ -2478,7 +2479,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Meghalaya: {
+meghalaya: {
 
 title:"Meghalaya Trip Plan",
 
@@ -2521,7 +2522,7 @@ budget:"₹12000 - ₹40000"
 },
 
 
-Kaziranga: {
+kaziranga: {
 
 title:"Kaziranga Trip Plan",
 
@@ -2564,7 +2565,7 @@ budget:"₹10000 - ₹40000"
 },
 
 
-Puri: {
+puri: {
 
 title:"Puri Trip Plan",
 
@@ -2605,7 +2606,7 @@ hotels:[
 budget:"₹8000 - ₹30000"
 
 },
-Ayodhya: {
+ayodhya: {
 
 title:"Ayodhya Trip Plan",
 
@@ -2648,7 +2649,7 @@ budget:"₹6000 - ₹25000"
 },
 
 
-Gwalior: {
+gwalior: {
 
 title:"Gwalior Trip Plan",
 
@@ -2691,7 +2692,7 @@ budget:"₹7000 - ₹30000"
 },
 
 
-Orchha: {
+orchha: {
 
 title:"Orchha Trip Plan",
 
@@ -2734,7 +2735,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Jabalpur: {
+jabalpur: {
 
 title:"Jabalpur Trip Plan",
 
@@ -2777,7 +2778,7 @@ budget:"₹7000 - ₹28000"
 },
 
 
-Ujjain: {
+ujjain: {
 
 title:"Ujjain Trip Plan",
 
@@ -2820,7 +2821,7 @@ budget:"₹6000 - ₹25000"
 },
 
 
-Amarkantak: {
+amarkantak: {
 
 title:"Amarkantak Trip Plan",
 
@@ -2861,7 +2862,7 @@ hotels:[
 budget:"₹5000 - ₹20000"
 
 },
-RannOfKutch: {
+rannofkutch: {
 
 title:"Rann Of Kutch Trip Plan",
 
@@ -2904,7 +2905,7 @@ budget:"₹12000 - ₹45000"
 },
 
 
-Diu: {
+diu: {
 
 title:"Diu Trip Plan",
 
@@ -2947,7 +2948,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Daman: {
+daman: {
 
 title:"Daman Trip Plan",
 
@@ -2990,7 +2991,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Alappuzha: {
+alappuzha: {
 
 title:"Alappuzha Trip Plan",
 
@@ -3033,7 +3034,7 @@ budget:"₹12000 - ₹50000"
 },
 
 
-Varkala: {
+varkala: {
 
 title:"Varkala Trip Plan",
 
@@ -3076,7 +3077,7 @@ budget:"₹9000 - ₹35000"
 },
 
 
-Kovalam: {
+kovalam: {
 
 title:"Kovalam Trip Plan",
 
@@ -3117,7 +3118,7 @@ hotels:[
 budget:"₹15000 - ₹60000"
 
 },
-Madurai: {
+madurai: {
 
 title:"Madurai Trip Plan",
 
@@ -3160,7 +3161,7 @@ budget:"₹8000 - ₹30000"
 },
 
 
-Rameshwaram: {
+rameshwaram: {
 
 title:"Rameshwaram Trip Plan",
 
@@ -3203,7 +3204,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Kanyakumari: {
+kanyakumari: {
 
 title:"Kanyakumari Trip Plan",
 
@@ -3246,7 +3247,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Hampi: {
+hampi: {
 
 title:"Hampi Trip Plan",
 
@@ -3289,7 +3290,7 @@ budget:"₹9000 - ₹35000"
 },
 
 
-Mysore: {
+mysore: {
 
 title:"Mysore Trip Plan",
 
@@ -3332,7 +3333,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Vijayawada: {
+vijayawada: {
 
 title:"Vijayawada Trip Plan",
 
@@ -3375,7 +3376,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Visakhapatnam: {
+visakhapatnam: {
 
 title:"Visakhapatnam Trip Plan",
 
@@ -3416,7 +3417,7 @@ hotels:[
 budget:"₹10000 - ₹40000"
 
 },
-Tawang: {
+tawang: {
 
 title:"Tawang Trip Plan",
 
@@ -3459,7 +3460,7 @@ budget:"₹15000 - ₹50000"
 },
 
 
-ZiroValley: {
+zirovalley: {
 
 title:"Ziro Valley Trip Plan",
 
@@ -3502,7 +3503,7 @@ budget:"₹12000 - ₹40000"
 },
 
 
-JimCorbett: {
+jimcorbett: {
 
 title:"Jim Corbett Trip Plan",
 
@@ -3545,7 +3546,7 @@ budget:"₹12000 - ₹50000"
 },
 
 
-Ranthambore: {
+ranthambore: {
 
 title:"Ranthambore Trip Plan",
 
@@ -3588,7 +3589,7 @@ budget:"₹15000 - ₹60000"
 },
 
 
-Bharatpur: {
+bharatpur: {
 
 title:"Bharatpur Trip Plan",
 
@@ -3631,7 +3632,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Dehradun: {
+dehradun: {
 
 title:"Dehradun Trip Plan",
 
@@ -3674,7 +3675,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-Ranikhet: {
+ranikhet: {
 
 title:"Ranikhet Trip Plan",
 
@@ -3715,7 +3716,7 @@ hotels:[
 budget:"₹9000 - ₹30000"
 
 },
-Mukteshwar: {
+mukteshwar: {
 
 title:"Mukteshwar Trip Plan",
 
@@ -3758,7 +3759,7 @@ budget:"₹9000 - ₹30000"
 },
 
 
-ValleyOfFlowers: {
+valleyofflowers: {
 
 title:"Valley Of Flowers Trip Plan",
 
@@ -3801,7 +3802,7 @@ budget:"₹15000 - ₹50000"
 },
 
 
-Kedarnath: {
+kedarnath: {
 
 title:"Kedarnath Trip Plan",
 
@@ -3843,7 +3844,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Badrinath: {
+badrinath: {
 
 title:"Badrinath Trip Plan",
 
@@ -3886,7 +3887,7 @@ budget:"₹10000 - ₹35000"
 },
 
 
-Somnath: {
+somnath: {
 
 title:"Somnath Trip Plan",
 
@@ -3929,7 +3930,7 @@ budget:"₹7000 - ₹25000"
 },
 
 
-Dwarka: {
+dwarka: {
 
 title:"Dwarka Trip Plan",
 
@@ -3972,7 +3973,7 @@ budget:"₹7000 - ₹30000"
 },
 
 
-GirNationalPark: {
+girnationalpark: {
 
 title:"Gir National Park Trip Plan",
 
@@ -4015,7 +4016,7 @@ budget:"₹12000 - ₹50000"
 },
 
 
-Saputara: {
+saputara: {
 
 title:"Saputara Trip Plan",
 
@@ -4056,7 +4057,7 @@ hotels:[
 budget:"₹8000 - ₹30000"
 
 },
-Aurangabad: {
+aurangabad: {
 
 title:"Aurangabad Trip Plan",
 
@@ -4099,11 +4100,11 @@ budget:"₹8000 - ₹30000"
 },
 
 
-AjantaEllora: {
+ajantaEllora: {
 
 title:"Ajanta Ellora Trip Plan",
 
-video:"videos/ajanta-ellora.mp4",
+video:"videos/ellora.mp4",
 
 places:[
 "Ajanta Caves",
@@ -4142,7 +4143,7 @@ budget:"₹8000 - ₹28000"
 },
 
 
-Nagpur: {
+nagpur: {
 
 title:"Nagpur Trip Plan",
 
