@@ -76,7 +76,9 @@ hotels:[
 ],
 
 
-budget:12000
+budget:12000,
+bestTime:"November to February"
+
 
 },
 
@@ -130,8 +132,8 @@ hotels:[
 ],
 
 
-budget:15000
-
+budget:15000,
+bestTime:"March to June"
 },
 himachal: {
 
@@ -173,8 +175,8 @@ hotels:[
 "Snow Valley Resort"
 ],
 
-budget:18000
-
+budget:18000,
+bestTime:"March to June"
 },
 
 
@@ -217,8 +219,8 @@ hotels:[
 "Bloomrooms"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -260,8 +262,8 @@ hotels:[
 "Trident Nariman Point"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"November to February"
 },
 
 
@@ -303,8 +305,8 @@ hotels:[
 "Hotel Ramanashree"
 ],
 
-budget:28000
-
+budget:28000,
+bestTime:"October to February"
 },
 
 
@@ -346,8 +348,8 @@ hotels:[
 "Hotel Park"
 ],
 
-budget:22000
-
+budget:22000,
+bestTime:"October to February"
 },
 
 
@@ -389,8 +391,8 @@ hotels:[
 "Hyatt Regency"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"November to February"
 },
 
 
@@ -432,8 +434,8 @@ hotels:[
 "Trident Hyderabad"
 ],
 
-budget:26000
-
+budget:26000,
+bestTime:"October to February"
 },
 
 
@@ -475,8 +477,8 @@ hotels:[
 "Hyatt Pune"
 ],
 
-budget:24000
-
+budget:24000,
+bestTime:"October to February"
 },
 
 
@@ -518,7 +520,8 @@ hotels:[
 "Jagat Niwas Palace"
 ],
 
-budget:40000
+budget:40000,
+bestTime:"October to March"
 
 },
 
@@ -561,8 +564,8 @@ hotels:[
 "Hotel Fifu"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"October to March"
 },
 
 
@@ -604,8 +607,8 @@ hotels:[
 "Pal Haveli"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"October to March"
 },
 agra: {
 
@@ -645,8 +648,8 @@ hotels:[
 "Hotel Taj Resorts"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -688,8 +691,8 @@ hotels:[
 "Ramada Plaza"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -731,8 +734,8 @@ hotels:[
 "Aloha On The Ganges"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"September to November"
 },
 
 
@@ -774,8 +777,8 @@ hotels:[
 "Hotel Sun N Star"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"March to June"
 },
 
 
@@ -817,8 +820,8 @@ hotels:[
 "Radisson Shimla"
 ],
 
-budget:40000
-
+budget:40000,
+bestTime:"March to June"
 },
 
 
@@ -860,8 +863,8 @@ hotels:[
 "Hotel Inclover"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"March to June"
 },
 
 
@@ -903,8 +906,8 @@ hotels:[
 "Savoy Ooty"
 ],
 
-budget: 30000
-
+budget: 30000,
+bestTime:"October to June"
 },
 
 
@@ -946,8 +949,8 @@ hotels:[
 "Fragrant Nature"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"September to March"
 },
 
 
@@ -989,8 +992,8 @@ hotels:[
 "Marari Beach Resort"
 ],
 
-budget:50000
-
+budget:50000,
+bestTime:"October to March"
 },
 
 
@@ -1032,7 +1035,8 @@ hotels:[
 "Symphony Palms"
 ],
 
-budget:70000
+budget:70000,
+bestTime:"October to May"
 
 },
 jaipur: {
@@ -1073,8 +1077,8 @@ hotels:[
 "Alsisar Haveli"
 ],
 
-budget:40000
-
+budget:40000,
+bestTime:"October to March"
 },
 
 
@@ -1116,8 +1120,8 @@ hotels:[
 "Merwara Estate"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -1159,7 +1163,8 @@ hotels:[
 "Hotel Brahma Horizon"
 ],
 
-budget:30000
+budget:30000,
+bestTime:"October to March"
 
 },
 
@@ -1202,8 +1207,8 @@ hotels:[
 "Udai Resort"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -1245,8 +1250,8 @@ hotels:[
 "Hotel Raj Villas"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -1288,8 +1293,8 @@ hotels:[
 "Hotel Ganga Kinare"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -1331,8 +1336,8 @@ hotels:[
 "Sterling Nainital"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"March to June"
 },
 auli: {
 
@@ -1372,8 +1377,8 @@ hotels:[
 "Blue Poppy Resort"
 ],
 
-budget:40000
-
+budget:40000,
+bestTime:"December to February"
 },
 
 
@@ -1415,8 +1420,8 @@ hotels:[
 "Kasol Heights"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"March to June"
 },
 
 
@@ -1458,8 +1463,8 @@ hotels:[
 "Baikunth Resort"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"March to June"
 },
 
 
@@ -1501,8 +1506,8 @@ hotels:[
 "Chamba Camp"
 ],
 
-budget:70000
-
+budget:70000,
+bestTime:"May to September"
 },
 
 
@@ -1544,8 +1549,8 @@ hotels:[
 "Sakya Abode"
 ],
 
-budget:60000
-
+budget:60000,
+bestTime:"May to October"
 },
 
 
@@ -1587,8 +1592,8 @@ hotels:[
 "Dalhousie Heights"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"March to June"
 },
 
 
@@ -1630,8 +1635,8 @@ hotels:[
 "Hyatt Regency"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -1673,8 +1678,8 @@ hotels:[
 "The Lalit Chandigarh"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 lucknow: {
 
@@ -1714,8 +1719,8 @@ hotels:[
 "Clarks Avadh"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -1757,8 +1762,8 @@ hotels:[
 "Centrum Hotel"
 ],
 
-budget:20000
-
+budget:20000,
+bestTime:"October to March"
 },
 
 
@@ -1800,8 +1805,8 @@ hotels:[
 "Brijwasi Royal"
 ],
 
-budget:20000
-
+budget:20000,
+bestTime:"October to March"
 },
 
 
@@ -1843,7 +1848,8 @@ hotels:[
 "Accord Puducherry"
 ],
 
-budget:40000
+budget:40000,
+bestTime:"October to March"
 
 },
 
@@ -1886,7 +1892,8 @@ hotels:[
 "Coorg Cliffs Resort"
 ],
 
-budget:45000
+budget:45000,
+bestTime:"October to March"
 
 },
 wayanad: {
@@ -1927,7 +1934,8 @@ hotels:[
 "Blue Ginger Resort"
 ],
 
-budget:35000
+budget:35000,
+bestTime:"October to May"
 
 },
 
@@ -1970,8 +1978,8 @@ hotels:[
 "Ramsukh Resorts"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to June"
 },
 
 
@@ -2013,8 +2021,8 @@ hotels:[
 "Rhythm Lonavala"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"June to September"
 },
 
 
@@ -2099,7 +2107,8 @@ hotels:[
 "Courtyard Nashik"
 ],
 
-budget:30000
+budget:30000,
+bestTime:"October to March"
 
 },
 
@@ -2142,8 +2151,8 @@ hotels:[
 "Novotel Ahmedabad"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to February"
 },
 surat: {
 
@@ -2183,8 +2192,8 @@ hotels:[
 "Orange Megastructure"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to February"
 },
 
 
@@ -2269,8 +2278,8 @@ hotels:[
 "Wow Hotel"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -2312,7 +2321,8 @@ hotels:[
 "Noor Us Sabah Palace"
 ],
 
-budget:30000
+budget:30000,
+bestTime:"October to March"
 
 },
 
@@ -2355,8 +2365,8 @@ hotels:[
 "Hotel Isabel Palace"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -2441,8 +2451,8 @@ hotels:[
 "Summit Swiss Heritage"
 ],
 
-budget:40000
-
+budget:40000,
+bestTime:"March to May"
 },
 
 
@@ -2484,7 +2494,8 @@ hotels:[
 "Royal Plaza"
 ],
 
-budget:45000
+budget:45000,
+bestTime:"March to June"
 
 },
 shillong: {
@@ -2525,8 +2536,8 @@ hotels:[
 "Centre Point Hotel"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"March to June"
 },
 
 
@@ -2568,8 +2579,8 @@ hotels:[
 "Riwar Resort"
 ],
 
-budget:40000
-
+budget:40000,
+bestTime:"October to April"
 },
 
 
@@ -2611,7 +2622,8 @@ hotels:[
 "Infinity Resort Kaziranga"
 ],
 
-budget:40000
+budget:40000,
+bestTime:"November to April"
 
 },
 
@@ -2654,7 +2666,8 @@ hotels:[
 "Hotel Holiday Resort"
 ],
 
-budget:30000
+budget:30000,
+bestTime:"October to March"
 
 },
 ayodhya: {
@@ -2695,8 +2708,8 @@ hotels:[
 "Kohinoor Palace"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -2738,8 +2751,8 @@ hotels:[
 "Clarks Inn Gwalior"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -2781,8 +2794,8 @@ hotels:[
 "Bundelkhand Riverside"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -2824,8 +2837,8 @@ hotels:[
 "Samdariya Hotel"
 ],
 
-budget:28000
-
+budget:28000,
+bestTime:"October to March"
 },
 
 
@@ -2867,8 +2880,8 @@ hotels:[
 "Hotel Mittal Avenue"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -2910,8 +2923,8 @@ hotels:[
 "Tourist Lodge"
 ],
 
-budget:20000
-
+budget:20000,
+bestTime:"October to March"
 },
 rannofkutch: {
 
@@ -2951,8 +2964,8 @@ hotels:[
 "Regenta Resort Bhuj"
 ],
 
-budget:45000
-
+budget:45000,
+bestTime:"November to February"
 },
 
 
@@ -2994,8 +3007,8 @@ hotels:[
 "Hotel Apaar"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -3037,8 +3050,8 @@ hotels:[
 "Hotel Miramar"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -3080,8 +3093,8 @@ hotels:[
 "Ramada Alleppey"
 ],
 
-budget:50000
-
+budget:50000,
+bestTime:"November to February"
 },
 
 
@@ -3123,8 +3136,8 @@ hotels:[
 "Magnolia Guesthouse"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"October to March"
 },
 
 
@@ -3166,8 +3179,8 @@ hotels:[
 "Uday Samudra Resort"
 ],
 
-budget:60000
-
+budget:60000,
+bestTime:"October to February"
 },
 madurai: {
 
@@ -3207,7 +3220,8 @@ hotels:[
 "The Gateway Hotel"
 ],
 
-budget:30000
+budget:30000,
+bestTime:"October to March"
 
 },
 
@@ -3250,7 +3264,8 @@ hotels:[
 "Jiwan Residency"
 ],
 
-budget:25000
+budget:25000,
+bestTime:"October to April"
 
 },
 
@@ -3293,7 +3308,8 @@ hotels:[
 "Hotel Tamilnadu"
 ],
 
-budget:25000
+budget:25000,
+bestTime:"October to March"
 
 },
 
@@ -3336,8 +3352,8 @@ hotels:[
 "Clarks Inn"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"October to February"
 },
 
 
@@ -3379,8 +3395,8 @@ hotels:[
 "Grand Mercure Mysore"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to February"
 },
 
 
@@ -3422,8 +3438,8 @@ hotels:[
 "Quality Hotel"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -3465,7 +3481,8 @@ hotels:[
 "The Gateway Hotel"
 ],
 
-budget:40000
+budget:40000,
+bestTime:"October to March"
 
 },
 tawang: {
@@ -3506,8 +3523,8 @@ hotels:[
 "Yangzom Hotel"
 ],
 
-budget:50000
-
+budget:50000,
+bestTime:"March to October"
 },
 
 
@@ -3549,8 +3566,8 @@ hotels:[
 "Hotel Valley View"
 ],
 
-budget:40000
-
+budget:40000,
+bestTime:"March to October"
 },
 
 
@@ -3592,8 +3609,8 @@ hotels:[
 "Corbett Riverside Resort"
 ],
 
-budget:50000
-
+budget:50000,
+bestTime:"November to February"
 },
 
 
@@ -3635,7 +3652,8 @@ hotels:[
 "Tiger Den Resort"
 ],
 
-budget:25000
+budget:25000,
+bestTime:"October to April"
 },
 
 bharatpur: {
@@ -3676,8 +3694,8 @@ hotels:[
 "Udai Vilas Palace"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -3719,8 +3737,8 @@ hotels:[
 "Seyfert Sarovar"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"March to June"
 },
 
 
@@ -3762,8 +3780,8 @@ hotels:[
 "West View Hotel"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"March to June"
 },
 mukteshwar: {
 
@@ -3803,8 +3821,8 @@ hotels:[
 "Casa Belle Vue"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"March to June"
 },
 
 
@@ -3846,8 +3864,8 @@ hotels:[
 "Homestays Ghangaria"
 ],
 
-budget:50000
-
+budget:50000,
+bestTime:"July to September"
 },
 
 
@@ -3888,8 +3906,8 @@ hotels:[
 "Guest Houses"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"May to June"
 },
 
 
@@ -3931,8 +3949,8 @@ hotels:[
 "Devlok Hotel"
 ],
 
-budget:35000
-
+budget:35000,
+bestTime:"May to June"
 },
 
 
@@ -3974,8 +3992,8 @@ hotels:[
 "Hotel Ambar"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to March"
 },
 
 
@@ -4017,8 +4035,8 @@ hotels:[
 "Hotel Roma Kristo"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -4060,8 +4078,8 @@ hotels:[
 "Club Mahindra Gir"
 ],
 
-budget:50000
-
+budget:50000,
+bestTime:"December to March"
 },
 
 
@@ -4103,8 +4121,8 @@ hotels:[
 "Torani Resort"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to February"
 },
 aurangabad: {
 
@@ -4144,8 +4162,8 @@ hotels:[
 "Ambassador Ajanta"
 ],
 
-budget:30000
-
+budget:30000,
+bestTime:"October to March"
 },
 
 
@@ -4187,8 +4205,8 @@ hotels:[
 "Ellora Heritage Resort"
 ],
 
-budget:28000
-
+budget:28000,
+bestTime:"October to March"
 },
 
 
@@ -4230,8 +4248,8 @@ hotels:[
 "The Pride Hotel"
 ],
 
-budget:25000
-
+budget:25000,
+bestTime:"October to February"
 },
 
 
