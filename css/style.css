@@ -157,36 +157,52 @@ nav a:hover{
     text-shadow:0 10px 25px rgba(0,0,0,.4);
 }
 
-#startTrip{
+.start-btn{
 
-    margin-top:35px;
+display:inline-block;
 
-    padding:18px 42px;
+margin-top:25px;
 
-    border:none;
+padding:16px 42px;
 
-    border-radius:50px;
+font-size:20px;
 
-    background:white;
+font-weight:600;
 
-    color:black;
+letter-spacing:1px;
 
-    font-size:18px;
+color:white;
 
-    font-weight:600;
+text-decoration:none;
 
-    cursor:pointer;
+background:linear-gradient(135deg,#ff6b35,#ff9f43);
 
-    transition:.3s;
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:all .35s ease;
+
+box-shadow:0 8px 25px rgba(255,107,53,.35);
+
 }
 
-#startTrip:hover{
+.start-btn:hover{
 
-    background:#00d4ff;
+transform:translateY(-4px) scale(1.05);
 
-    color:white;
+box-shadow:0 14px 35px rgba(255,107,53,.55);
 
-    transform:translateY(-4px);
+background:linear-gradient(135deg,#ff512f,#f09819);
+
+}
+
+.start-btn:active{
+
+transform:scale(.96);
+
 }
 /*========================================
                 QUOTE
