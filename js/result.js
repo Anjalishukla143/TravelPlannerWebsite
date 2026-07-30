@@ -133,7 +133,53 @@ hotels:[
 budget:15000
 
 },
-Delhi: {
+himachal: {
+
+title:"Himachal Pradesh Trip Plan",
+
+video:"videos/himachal.mp4",
+
+places:[
+"Shimla",
+"Manali",
+"Dharamshala",
+"Kasol",
+"Kullu",
+"Spiti Valley"
+],
+
+vegRestaurants:[
+"Wake & Bake Cafe",
+"Ashiana Restaurant",
+"Cafe Simla Times"
+],
+
+nonVegRestaurants:[
+"Johnson's Cafe",
+"The Corner House",
+"Cafe 1947"
+],
+
+famousFood:[
+"Siddu",
+"Madra",
+"Babru",
+"Tudkiya Bhat"
+],
+
+hotels:[
+"Wildflower Hall",
+"The Himalayan",
+"Snow Valley Resort"
+],
+
+budget:18000
+
+},
+
+
+
+delhi: {
 
 title:"Delhi Trip Plan",
 
@@ -561,7 +607,7 @@ hotels:[
 budget:35000
 
 },
-Agra: {
+agra: {
 
 title:"Agra Trip Plan",
 
@@ -647,7 +693,7 @@ budget:25000
 },
 
 
-Rishikesh: {
+rishikesh: {
 
 title:"Rishikesh Trip Plan",
 
@@ -1118,7 +1164,7 @@ budget:30000
 },
 
 
-"mount Abu": {
+mountAbu: {
 
 title:"Mount Abu Trip Plan",
 
@@ -1417,7 +1463,7 @@ budget:30000
 },
 
 
-"leh ladakh": {
+lehladakh: {
 
 title:"Leh Ladakh Trip Plan",
 
@@ -1460,7 +1506,7 @@ budget:70000
 },
 
 
-"spiti valley": {
+spitivalley: {
 
 title:"Spiti Valley Trip Plan",
 
