@@ -17,7 +17,14 @@ localStorage.getItem("budget") || "10000";
 const foodPreference =
 localStorage.getItem("food") || "Veg";
 
+const travelMode =
+localStorage.getItem("travelMode") || "Car";
 
+const travelType =
+localStorage.getItem("travelType") || "Solo";
+
+const people =
+parseInt(localStorage.getItem("people")) || 1;
 
 
 
@@ -69,8 +76,7 @@ hotels:[
 ],
 
 
-budget:
-"₹9000 - ₹12000"
+budget:12000
 
 },
 
@@ -124,8 +130,7 @@ hotels:[
 ],
 
 
-budget:
-"₹10000 - ₹15000"
+budget:15000
 
 },
 Delhi: {
@@ -166,7 +171,7 @@ hotels:[
 "Bloomrooms"
 ],
 
-budget:"₹8000 - ₹25000"
+budget:25000
 
 },
 
@@ -209,7 +214,7 @@ hotels:[
 "Trident Nariman Point"
 ],
 
-budget:"₹10000 - ₹30000"
+budget:30000
 
 },
 
@@ -252,7 +257,7 @@ hotels:[
 "Hotel Ramanashree"
 ],
 
-budget:"₹9000 - ₹28000"
+budget:28000
 
 },
 
@@ -295,7 +300,7 @@ hotels:[
 "Hotel Park"
 ],
 
-budget:"₹8000 - ₹22000"
+budget:22000
 
 },
 
@@ -338,7 +343,7 @@ hotels:[
 "Hyatt Regency"
 ],
 
-budget:"₹8000 - ₹25000"
+budget:25000
 
 },
 
@@ -381,7 +386,7 @@ hotels:[
 "Trident Hyderabad"
 ],
 
-budget:"₹9000 - ₹26000"
+budget:26000
 
 },
 
@@ -424,7 +429,7 @@ hotels:[
 "Hyatt Pune"
 ],
 
-budget:"₹8000 - ₹24000"
+budget:24000
 
 },
 
@@ -467,7 +472,7 @@ hotels:[
 "Jagat Niwas Palace"
 ],
 
-budget:"₹12000 - ₹40000"
+budget:40000
 
 },
 
@@ -510,7 +515,7 @@ hotels:[
 "Hotel Fifu"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -553,7 +558,7 @@ hotels:[
 "Pal Haveli"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 Agra: {
@@ -594,7 +599,7 @@ hotels:[
 "Hotel Taj Resorts"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -637,7 +642,7 @@ hotels:[
 "Ramada Plaza"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -680,7 +685,7 @@ hotels:[
 "Aloha On The Ganges"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -723,7 +728,7 @@ hotels:[
 "Hotel Sun N Star"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -766,7 +771,7 @@ hotels:[
 "Radisson Shimla"
 ],
 
-budget:"₹12000 - ₹40000"
+budget:40000
 
 },
 
@@ -809,7 +814,7 @@ hotels:[
 "Hotel Inclover"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -852,7 +857,7 @@ hotels:[
 "Savoy Ooty"
 ],
 
-budget:"₹9000 - ₹30000"
+budget: 30000
 
 },
 
@@ -895,7 +900,7 @@ hotels:[
 "Fragrant Nature"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -938,7 +943,7 @@ hotels:[
 "Marari Beach Resort"
 ],
 
-budget:"₹12000 - ₹50000"
+budget:50000
 
 },
 
@@ -981,7 +986,7 @@ hotels:[
 "Symphony Palms"
 ],
 
-budget:"₹20000 - ₹70000"
+budget:70000
 
 },
 jaipur: {
@@ -1022,7 +1027,7 @@ hotels:[
 "Alsisar Haveli"
 ],
 
-budget:"₹10000 - ₹40000"
+budget:40000
 
 },
 
@@ -1065,7 +1070,7 @@ hotels:[
 "Merwara Estate"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -1108,7 +1113,7 @@ hotels:[
 "Hotel Brahma Horizon"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -1151,7 +1156,7 @@ hotels:[
 "Udai Resort"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -1194,7 +1199,7 @@ hotels:[
 "Hotel Raj Villas"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -1237,7 +1242,7 @@ hotels:[
 "Hotel Ganga Kinare"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -1280,7 +1285,7 @@ hotels:[
 "Sterling Nainital"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 auli: {
@@ -1321,7 +1326,7 @@ hotels:[
 "Blue Poppy Resort"
 ],
 
-budget:"₹12000 - ₹40000"
+budget:40000
 
 },
 
@@ -1364,7 +1369,7 @@ hotels:[
 "Kasol Heights"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -1407,7 +1412,7 @@ hotels:[
 "Baikunth Resort"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -1450,7 +1455,7 @@ hotels:[
 "Chamba Camp"
 ],
 
-budget:"₹25000 - ₹70000"
+budget:70000
 
 },
 
@@ -1493,7 +1498,7 @@ hotels:[
 "Sakya Abode"
 ],
 
-budget:"₹20000 - ₹60000"
+budget:60000
 
 },
 
@@ -1536,7 +1541,7 @@ hotels:[
 "Dalhousie Heights"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -1579,7 +1584,7 @@ hotels:[
 "Hyatt Regency"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -1622,7 +1627,7 @@ hotels:[
 "The Lalit Chandigarh"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 lucknow: {
@@ -1663,7 +1668,7 @@ hotels:[
 "Clarks Avadh"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -1706,7 +1711,7 @@ hotels:[
 "Centrum Hotel"
 ],
 
-budget:"₹6000 - ₹20000"
+budget:20000
 
 },
 
@@ -1749,7 +1754,7 @@ hotels:[
 "Brijwasi Royal"
 ],
 
-budget:"₹5000 - ₹20000"
+budget:20000
 
 },
 
@@ -1792,7 +1797,7 @@ hotels:[
 "Accord Puducherry"
 ],
 
-budget:"₹10000 - ₹40000"
+budget:40000
 
 },
 
@@ -1835,7 +1840,7 @@ hotels:[
 "Coorg Cliffs Resort"
 ],
 
-budget:"₹12000 - ₹45000"
+budget:45000
 
 },
 wayanad: {
@@ -1876,7 +1881,7 @@ hotels:[
 "Blue Ginger Resort"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -1919,7 +1924,7 @@ hotels:[
 "Ramsukh Resorts"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -1962,7 +1967,7 @@ hotels:[
 "Rhythm Lonavala"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -2005,7 +2010,7 @@ hotels:[
 "Velvet County"
 ],
 
-budget:"₹8000 - ₹25000"
+budget:25000
 
 },
 
@@ -2048,7 +2053,7 @@ hotels:[
 "Courtyard Nashik"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -2091,7 +2096,7 @@ hotels:[
 "Novotel Ahmedabad"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 surat: {
@@ -2132,7 +2137,7 @@ hotels:[
 "Orange Megastructure"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -2175,7 +2180,7 @@ hotels:[
 "Grand Mercure Vadodara"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -2218,7 +2223,7 @@ hotels:[
 "Wow Hotel"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -2261,7 +2266,7 @@ hotels:[
 "Noor Us Sabah Palace"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -2304,7 +2309,7 @@ hotels:[
 "Hotel Isabel Palace"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -2347,7 +2352,7 @@ hotels:[
 "Courtyard Bhopal"
 ],
 
-budget:"₹5000 - ₹20000"
+budget:20000
 
 },
 
@@ -2390,7 +2395,7 @@ hotels:[
 "Summit Swiss Heritage"
 ],
 
-budget:"₹12000 - ₹40000"
+budget:40000
 
 },
 
@@ -2433,7 +2438,7 @@ hotels:[
 "Royal Plaza"
 ],
 
-budget:"₹12000 - ₹45000"
+budget:45000
 
 },
 shillong: {
@@ -2474,7 +2479,7 @@ hotels:[
 "Centre Point Hotel"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -2517,7 +2522,7 @@ hotels:[
 "Riwar Resort"
 ],
 
-budget:"₹12000 - ₹40000"
+budget:40000
 
 },
 
@@ -2560,7 +2565,7 @@ hotels:[
 "Infinity Resort Kaziranga"
 ],
 
-budget:"₹10000 - ₹40000"
+budget:40000
 
 },
 
@@ -2603,7 +2608,7 @@ hotels:[
 "Hotel Holiday Resort"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 ayodhya: {
@@ -2644,7 +2649,7 @@ hotels:[
 "Kohinoor Palace"
 ],
 
-budget:"₹6000 - ₹25000"
+budget:25000
 
 },
 
@@ -2687,7 +2692,7 @@ hotels:[
 "Clarks Inn Gwalior"
 ],
 
-budget:"₹7000 - ₹30000"
+budget:30000
 
 },
 
@@ -2730,7 +2735,7 @@ hotels:[
 "Bundelkhand Riverside"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -2773,7 +2778,7 @@ hotels:[
 "Samdariya Hotel"
 ],
 
-budget:"₹7000 - ₹28000"
+budget:28000
 
 },
 
@@ -2816,7 +2821,7 @@ hotels:[
 "Hotel Mittal Avenue"
 ],
 
-budget:"₹6000 - ₹25000"
+budget:25000
 
 },
 
@@ -2859,7 +2864,7 @@ hotels:[
 "Tourist Lodge"
 ],
 
-budget:"₹5000 - ₹20000"
+budget:20000
 
 },
 rannofkutch: {
@@ -2900,7 +2905,7 @@ hotels:[
 "Regenta Resort Bhuj"
 ],
 
-budget:"₹12000 - ₹45000"
+budget:45000
 
 },
 
@@ -2943,7 +2948,7 @@ hotels:[
 "Hotel Apaar"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -2986,7 +2991,7 @@ hotels:[
 "Hotel Miramar"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -3029,7 +3034,7 @@ hotels:[
 "Ramada Alleppey"
 ],
 
-budget:"₹12000 - ₹50000"
+budget:50000
 
 },
 
@@ -3072,7 +3077,7 @@ hotels:[
 "Magnolia Guesthouse"
 ],
 
-budget:"₹9000 - ₹35000"
+budget:35000
 
 },
 
@@ -3115,7 +3120,7 @@ hotels:[
 "Uday Samudra Resort"
 ],
 
-budget:"₹15000 - ₹60000"
+budget:60000
 
 },
 madurai: {
@@ -3156,7 +3161,7 @@ hotels:[
 "The Gateway Hotel"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -3199,7 +3204,7 @@ hotels:[
 "Jiwan Residency"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -3242,7 +3247,7 @@ hotels:[
 "Hotel Tamilnadu"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -3285,7 +3290,7 @@ hotels:[
 "Clarks Inn"
 ],
 
-budget:"₹9000 - ₹35000"
+budget:35000
 
 },
 
@@ -3328,7 +3333,7 @@ hotels:[
 "Grand Mercure Mysore"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -3371,7 +3376,7 @@ hotels:[
 "Quality Hotel"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -3414,7 +3419,7 @@ hotels:[
 "The Gateway Hotel"
 ],
 
-budget:"₹10000 - ₹40000"
+budget:40000
 
 },
 tawang: {
@@ -3455,7 +3460,7 @@ hotels:[
 "Yangzom Hotel"
 ],
 
-budget:"₹15000 - ₹50000"
+budget:50000
 
 },
 
@@ -3498,7 +3503,7 @@ hotels:[
 "Hotel Valley View"
 ],
 
-budget:"₹12000 - ₹40000"
+budget:40000
 
 },
 
@@ -3541,7 +3546,7 @@ hotels:[
 "Corbett Riverside Resort"
 ],
 
-budget:"₹12000 - ₹50000"
+budget:50000
 
 },
 
@@ -3584,10 +3589,8 @@ hotels:[
 "Tiger Den Resort"
 ],
 
-budget:"₹15000 - ₹60000"
-
+budget:25000
 },
-
 
 bharatpur: {
 
@@ -3627,7 +3630,7 @@ hotels:[
 "Udai Vilas Palace"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -3670,7 +3673,7 @@ hotels:[
 "Seyfert Sarovar"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -3713,7 +3716,7 @@ hotels:[
 "West View Hotel"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 mukteshwar: {
@@ -3754,7 +3757,7 @@ hotels:[
 "Casa Belle Vue"
 ],
 
-budget:"₹9000 - ₹30000"
+budget:30000
 
 },
 
@@ -3797,7 +3800,7 @@ hotels:[
 "Homestays Ghangaria"
 ],
 
-budget:"₹15000 - ₹50000"
+budget:50000
 
 },
 
@@ -3839,7 +3842,7 @@ hotels:[
 "Guest Houses"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -3882,7 +3885,7 @@ hotels:[
 "Devlok Hotel"
 ],
 
-budget:"₹10000 - ₹35000"
+budget:35000
 
 },
 
@@ -3925,7 +3928,7 @@ hotels:[
 "Hotel Ambar"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -3968,7 +3971,7 @@ hotels:[
 "Hotel Roma Kristo"
 ],
 
-budget:"₹7000 - ₹30000"
+budget:30000
 
 },
 
@@ -4011,7 +4014,7 @@ hotels:[
 "Club Mahindra Gir"
 ],
 
-budget:"₹12000 - ₹50000"
+budget:50000
 
 },
 
@@ -4054,7 +4057,7 @@ hotels:[
 "Torani Resort"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 aurangabad: {
@@ -4095,7 +4098,7 @@ hotels:[
 "Ambassador Ajanta"
 ],
 
-budget:"₹8000 - ₹30000"
+budget:30000
 
 },
 
@@ -4138,7 +4141,7 @@ hotels:[
 "Ellora Heritage Resort"
 ],
 
-budget:"₹8000 - ₹28000"
+budget:28000
 
 },
 
@@ -4181,7 +4184,7 @@ hotels:[
 "The Pride Hotel"
 ],
 
-budget:"₹7000 - ₹25000"
+budget:25000
 
 },
 
@@ -4247,20 +4250,107 @@ videoTitle.innerHTML = destination;
 document.getElementById("destination").innerHTML =
 place.title;
 
+// Vehicle Recommendation
+
+let vehicle = "";
+
+if (people == 1) {
+
+    vehicle = "Bike / Auto";
+
+}
+else if (people <= 4) {
+
+    vehicle = "Sedan Car";
+
+}
+else if (people <= 7) {
+
+    vehicle = "SUV";
+
+}
+else {
+
+    vehicle = "Tempo Traveller";
+
+}
 
 
+// Hotel Recommendation
+
+let roomRecommendation = "";
+
+if (travelType === "Solo") {
+
+    roomRecommendation = "1 Standard Room";
+
+}
+else if (travelType === "Friends") {
+
+    roomRecommendation =
+    Math.ceil(people / 2) + " Deluxe Rooms";
+
+}
+else {
+
+    roomRecommendation =
+    Math.ceil(people / 4) + " Family Suites";
+
+}
+// Vehicle Recommendation
+
+let vehicle = "";
+
+if (people == 1) {
+
+    vehicle = "Bike / Auto";
+
+}
+else if (people <= 4) {
+
+    vehicle = "Sedan Car";
+
+}
+else if (people <= 7) {
+
+    vehicle = "SUV";
+
+}
+else {
+
+    vehicle = "Tempo Traveller";
+
+}
 
 
 // Budget Calculation
-
+const totalBudget = place.budget * people;
 document.getElementById("budget").innerHTML =
 
 `
-Trip Duration: ${days} Days
+Trip Duration : ${days} Days
+
 <br><br>
 
-Estimated Cost:
-${place.budget}
+Travel Type : ${travelType}
+
+<br><br>
+
+Total Travellers : ${people}
+
+<br><br>
+
+Travel Mode : ${travelMode}
+
+<br><br>
+
+Recommended Vehicle : ${vehicle}
+
+<br><br>
+
+Estimated Budget :
+
+₹${totalBudget.toLocaleString("en-IN")}
 
 `;
 
@@ -4352,7 +4442,25 @@ let foodHTML = "";
 
 
 if(foodPreference === "Veg"){
+let roomRecommendation = "";
 
+if (travelType === "Solo") {
+
+    roomRecommendation = "1 Standard Room";
+
+}
+
+else if (travelType === "Friends") {
+
+    roomRecommendation = Math.ceil(people / 2) + " Deluxe Rooms";
+
+}
+
+else {
+
+    roomRecommendation = Math.ceil(people / 4) + " Family Suites";
+
+}
 
 foodHTML += `
 
@@ -4438,6 +4546,12 @@ ${place.famousFood.map(item=>`<li>${item}</li>`).join("")}
 
 
 <h3>Recommended Hotels</h3>
+
+<p>
+
+<b>Suggested Rooms :</b> ${roomRecommendation}
+
+</p>
 
 <ul>
 
