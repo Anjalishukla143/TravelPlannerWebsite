@@ -4297,30 +4297,7 @@ else {
     Math.ceil(people / 4) + " Family Suites";
 
 }
-// Vehicle Recommendation
 
-let vehicle = "";
-
-if (people == 1) {
-
-    vehicle = "Bike / Auto";
-
-}
-else if (people <= 4) {
-
-    vehicle = "Sedan Car";
-
-}
-else if (people <= 7) {
-
-    vehicle = "SUV";
-
-}
-else {
-
-    vehicle = "Tempo Traveller";
-
-}
 
 
 // Budget Calculation
@@ -4465,7 +4442,7 @@ else {
 foodHTML += `
 
 <h3>Vegetarian Restaurants</h3>
-
+<p><b>Suggested Rooms :</b> ${roomRecommendation}</p>
 <ul>
 
 ${place.vegRestaurants.map(item=>`<li>${item}</li>`).join("")}
