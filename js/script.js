@@ -1,98 +1,105 @@
-// ================================
-// Elements
-// ================================
+document.addEventListener("DOMContentLoaded", function () {
 
-const videoGrid = document.querySelector(".video-grid");
-const buttons = document.querySelectorAll(".categories button");
 
-// ================================
-// Create Video Cards
-// ================================
+    const cards = document.querySelectorAll(".video-card");
 
-function loadVideos(category = "All") {
 
-    videoGrid.innerHTML = "";
+    cards.forEach(card => {
 
-    destinations.forEach(place => {
 
-        if (category === "All" || place.category === category) {
+        card.addEventListener("click", function () {
 
-            const card = document.createElement("div");
 
-            card.className = "video-card";
+            const place = card.querySelector("h3").innerText;
 
-            card.innerHTML = `
 
-                <video
-                    src="${place.video}"
-                    autoplay
-                    muted
-                    loop
-                    playsinline>
-                </video>
+            window.location.href =
+            "planner.html?destination=" + encodeURIComponent(place);
 
-                <div class="video-title">
 
-                    ${place.name}
+        });
 
-                </div>
+
+
+        const title = card.querySelector("h3");
+
+
+        if(title){
+
+
+            const placeName = title.innerText;
+
+
+            title.style.display = "none";
+
+
+            const overlay = document.createElement("div");
+
+
+            overlay.className = "card-overlay";
+
+
+            overlay.innerHTML = `
+
+                <h3>${placeName}</h3>
+
+                <button>
+                EXPLORE
+                </button>
 
             `;
 
-            card.addEventListener("click", () => {
 
-                window.location.href =
-                "planner.html?destination=" +
-                encodeURIComponent(place.name);
+            card.appendChild(overlay);
 
-            });
-
-            videoGrid.appendChild(card);
 
         }
+document.querySelectorAll(".categories button").forEach(button => {
+
+
+    button.addEventListener("click", function(){
+
+
+        const category = this.innerText.toLowerCase();
+
+
+
+        document.querySelectorAll(".video-card").forEach(card => {
+
+
+            const name = card.querySelector(".card-overlay h3")?.innerText.toLowerCase()
+            || card.querySelector("h3")?.innerText.toLowerCase();
+
+
+
+            if(category === "all"){
+
+                card.style.display = "block";
+
+            }
+
+            else if(name.includes(category)){
+
+                card.style.display = "block";
+
+            }
+
+            else{
+
+                card.style.display = "none";
+
+            }
+
+
+        });
+
 
     });
 
-}
-
-// ================================
-// Category Filter
-// ================================
-
-buttons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        buttons.forEach(btn =>
-            btn.classList.remove("active")
-        );
-
-        button.classList.add("active");
-
-        loadVideos(button.textContent.trim());
-
-    });
 
 });
 
-// ================================
-// Start Button
-// ================================
-
-const startButton = document.getElementById("startTrip");
-
-if(startButton){
-
-    startButton.addEventListener("click",()=>{
-
-        window.location.href="planner.html";
-
     });
 
-}
 
-// ================================
-// Load All Videos
-// ================================
-
-loadVideos();
+});

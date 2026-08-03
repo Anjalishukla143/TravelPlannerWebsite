@@ -1,0 +1,29 @@
+{
+  "name": "travelplannerwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anjalishukla143/TravelPlannerWebsite-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Anjalishukla143/TravelPlannerWebsite-/issues"
+  },
+  "homepage": "https://github.com/Anjalishukla143/TravelPlannerWebsite-#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.5.0"
+  },
+  "devDependencies": {}
+}

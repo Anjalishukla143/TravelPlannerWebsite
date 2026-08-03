@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Plan Your Trip</title>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="../css/planner.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Background Video -->
+
+<video autoplay muted loop class="background-video">
+
+    <source src="../videos/planner-background.mp4" type="video/mp4">
+
+</video>
+
+
+<!-- Dark Overlay -->
+
+<div class="overlay"></div>
+
+
+
+<div class="planner-container">
+
+
+<div class="planner-card">
+
+
+<h1>Plan Your Trip</h1>
+
+
+
+<form id="plannerForm">
+
+
+
+<input
+
+type="text"
+
+id="destination"
+
+placeholder="Enter Destination"
+
+required
+
+>
+
+
+
+<input
+
+type="number"
+
+id="days"
+
+placeholder="Number of Days"
+
+required
+
+>
+
+
+
+<select id="budget">
+
+
+<option value="">
+
+Select Budget Type
+
+</option>
+
+
+<option value="Lower">
+
+Lower Budget
+
+</option>
+
+
+<option value="Moderate">
+
+Moderate Budget
+
+</option>
+
+
+<option value="Luxury">
+
+Luxury Budget
+
+</option>
+
+
+</select>
+
+
+
+<select id="travelMode">
+
+
+<option value="">
+
+Select Travel Mode
+
+</option>
+
+
+<option value="Flight">
+
+Flight
+
+</option>
+
+
+<option value="Train">
+
+Train
+
+</option>
+
+
+<option value="Car">
+
+Car
+
+</option>
+
+
+<option value="Bike">
+
+Bike
+
+</option>
+
+
+</select>
+
+
+
+<select id="travelType">
+
+
+<option value="">
+
+Select Travel Type
+
+</option>
+
+
+<option value="Solo">
+
+Solo
+
+</option>
+
+
+<option value="Friends">
+
+Friends
+
+</option>
+
+
+<option value="Family">
+
+Family
+
+</option>
+
+
+</select>
+<!-- Friends Count -->
+
+<div id="friendsCountDiv" style="display:none;">
+
+<label>
+Number of Friends
+</label>
+
+
+<select id="friendsCount">
+
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+
+</select>
+
+</div>
+
+
+
+
+
+<!-- Family Count -->
+
+
+<div id="familyCountDiv" style="display:none;">
+
+
+<label>
+Number of Family Members
+</label>
+
+
+<select id="familyCount">
+
+
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+<select id="food">
+
+
+<option value="">
+
+Food Preference
+
+</option>
+
+
+<option value="Veg">
+
+Veg
+
+</option>
+
+
+<option value="Non-Veg">
+
+Non-Veg
+
+</option>
+
+
+<option value="Both">
+
+Both
+
+</option>
+
+
+</select>
+
+
+
+
+
+<button type="submit" id="generateTripBtn">
+    Generate AI Trip
+</button>
+
+
+
+</form>
+
+</div> <!-- planner-card -->
+
+
+</div> <!-- planner-container -->
+
+
+
+
+
+<!-- Data File -->
+
+<script src="../data/places.js"></script>
+
+
+
+<!-- Planner Logic -->
+
+<script src="../js/planner.js"></script>
+
+
+<script>
+
+window.onload = function(){
+
+    const params = new URLSearchParams(window.location.search);
+
+
+    const place = params.get("destination");
+
+
+    if(place){
+
+        document.getElementById("destination").value = place;
+
+    }
+
+};
+
+</script>
+</body>
+
+
+</html>

@@ -1421,4 +1421,3 @@ const placesData = [
 
 
 ];
-export default placesData;

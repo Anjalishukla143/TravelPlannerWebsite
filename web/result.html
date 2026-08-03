@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Travel Planner Result</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="result-container">
+<div class="result-hero">
+<div class="result-video">
+
+    <video 
+    id="resultVideo"
+    autoplay
+    muted
+    loop
+    playsinline>
+
+      
+
+    </video>
+
+</div>
+    <div class="result-overlay">
+
+        <h1 id="title">
+            Your AI Trip Plan
+        </h1>
+
+    </div>
+
+</div>
+
+<div class="welcome-card">
+
+    <h2 id="welcomeTitle"></h2>
+
+    <p id="welcomeMessage"></p>
+
+</div>
+
+
+
+<!-- Trip Summary -->
+
+<div class="card">
+
+<h2>📋 Trip Summary</h2>
+
+<div id="summary">
+
+Generating trip summary...
+
+</div>
+
+</div>
+
+
+
+
+<!-- Day Wise Plan -->
+
+<div class="card">
+
+<h2>📅 Day Wise Itinerary</h2>
+
+<div id="plan">
+
+</div>
+
+</div>
+
+
+
+
+<div class="two-column">
+
+    <!-- Places -->
+
+    <div class="card">
+
+        <h2>📍 Famous Places To Visit</h2>
+
+        <div id="places" class="grid"></div>
+
+    </div>
+
+    <!-- Food -->
+
+    <div class="card">
+
+        <h2>🍽 Food & Restaurants</h2>
+
+        <div id="food" class="grid"></div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class="two-column">
+
+    <!-- Hotels -->
+
+    <div class="card">
+
+        <h2>🏨 Hotels Recommendation</h2>
+
+        <div id="hotels" class="grid"></div>
+
+    </div>
+
+    <!-- Budget -->
+
+    <div class="card">
+
+        <h2>💰 Estimated Budget</h2>
+
+        <div id="budget" class="budget-grid"></div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Best Time -->
+
+<div class="card">
+
+<h2>🌤 Best Time To Visit</h2>
+
+<p id="bestTime">
+
+</p>
+
+</div>
+
+
+
+
+
+<!-- Tips -->
+
+<div class="card">
+
+<h2>💡 Travel Tips</h2>
+
+<div id="tips">
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<script src="../js/result.js"></script>
+
+
+</body>
+
+</html>
