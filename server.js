@@ -9,6 +9,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname));
+
+app.use("/videos", express.static(path.join(__dirname, "videos")));
 app.use(express.static(path.join(__dirname,"frontend")));
 
 app.get("/",(req,res)=>{
