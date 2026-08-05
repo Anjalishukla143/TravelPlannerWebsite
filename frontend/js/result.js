@@ -201,7 +201,39 @@ ${message}
 
 
 }
+function loadSavedTrip(){
 
+    const savedData = localStorage.getItem("tripData");
+
+
+    if(!savedData){
+
+        console.log("NO SAVED AI DATA");
+        generateAIPlan();
+        return;
+
+    }
+
+
+    try{
+
+        const trip = JSON.parse(savedData);
+
+        console.log("LOADED FROM LOCAL STORAGE:",trip);
+
+        showTrip(trip);
+
+    }
+
+    catch(error){
+
+        console.log("LOCAL STORAGE ERROR:",error);
+
+        generateAIPlan();
+
+    }
+
+}
 
 
 // =======================================
@@ -727,8 +759,8 @@ function loadResultVideo(){
 }
 window.onload = function(){
 
-loadResultVideo();
+    loadResultVideo();
 
-generateAIPlan();
+    loadSavedTrip();
 
 };

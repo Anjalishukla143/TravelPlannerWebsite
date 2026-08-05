@@ -1,1 +1,13 @@
 .env
+# Dependencies
+backend/node_modules/
+
+# Environment file
+backend/.env
+
+# Logs
+*.log
+backend/.env
+backend/node_modules/
+node_modules/
+.env

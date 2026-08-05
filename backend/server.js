@@ -9,51 +9,52 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ===============================
+// GROQ SETUP
+// ===============================
 
 const groq = new Groq({
-
     apiKey: process.env.GROQ_API_KEY
-
 });
 
+// ===============================
+// TEST ROUTE
+// ===============================
 
+app.get("/", (req, res) => {
+    res.send("AI Travel Planner Backend Running...");
+});
 
-app.post("/ai", async(req,res)=>{
+// ===============================
+// AI ROUTE
+// ===============================
 
+app.post("/ai", async (req, res) => {
 
-try{
+    try {
 
+        const {
+            destination,
+            days,
+            people,
+            budget,
+            food,
+            travelMode,
+            travelType
+        } = req.body;
 
-const {
+        console.log("========== USER REQUEST ==========");
+        console.log(req.body);
 
-destination,
-days,
-people,
-budget,
-food,
-travelMode,
-travelType
-
-}=req.body;
-
-
-
-console.log("USER DESTINATION:", destination);
-
-
-const prompt = `
-
+        if (!destination) {
+            return res.status(400).json({
+                message: "Destination is required"
+            });
+        }
+                const prompt = `
 You are a professional India Travel Planner AI.
 
-The destination is FIXED.
-
-Destination: ${destination}
-
-Never change the destination.
-Never recommend another destination.
-Generate the complete travel plan ONLY for ${destination}.
-
-User Details:
+Generate ONLY valid JSON.
 
 Destination: ${destination}
 Days: ${days}
@@ -62,251 +63,120 @@ Budget: ${budget}
 Food Preference: ${food}
 Travel Mode: ${travelMode}
 Travel Type: ${travelType}
-IMPORTANT BUDGET RULES:
 
-- Travel Type can be Solo, Friends, Family or Couple.
+Rules:
 
-- Travellers = ${people}
-
-- Calculate ALL costs according to the number of travellers.
-
-- If Travel Type is Solo:
-All costs are for 1 traveller.
-
-- If Travel Type is Friends:
-Multiply hotel, food, transport and total budget according to ${people} friends.
-
-- If Travel Type is Family:
-Multiply hotel, food, transport and total budget according to ${people} family members.
-
-- If Travel Type is Couple:
-Calculate budget for exactly 2 people unless another traveller count is provided.
-
-- The budget.total MUST include the cost for ALL travellers.
-
-- Never calculate budget for one person when travellers are more than one.
-Instructions:
-
-- Return ONLY valid JSON.
-- No markdown.
-- No explanation.
+- Never change the destination.
 - Generate exactly ${days} day(s).
-- Use realistic tourist places.
-- Generate exactly 3 hotel recommendations.
-
-- Hotels MUST depend on the selected budget.
-
-- If Budget is Lower:
-Suggest only affordable budget hotels.
-
-- If Budget is Moderate:
-Suggest only good 3-star or 4-star hotels.
-
-- If Budget is Luxury:
-Suggest only premium 5-star luxury hotels.
-
-- Never return the same hotels for different budgets.
-- Suggest restaurants according to food preference.
-- Budget must be in INR.
-- Keep the itinerary practical.
-- Morning, Afternoon and Evening activities should be different.
-- Include local shopping.
+- Budget in INR.
+- Suggest 3 hotels according to budget.
+- Include famous places.
 - Include famous food.
-- Include useful travel tips.
+- Include restaurants.
+- Include travel tips.
 
-Return this JSON:
+Return ONLY this JSON format:
 
 {
 "title":"",
 "tripSummary":"",
 "bestTime":"",
-
-"places":[
-"",
-"",
-"",
-"",
-""
-],
-
-"famousFood":[
-"",
-"",
-"",
-""
-],
-
-"vegRestaurants":[
-"",
-"",
-"",
-""
-],
-
-"nonVegRestaurants":[
-"",
-"",
-"",
-""
-],
-
+"places":["","","","",""],
+"famousFood":["","","",""],
+"vegRestaurants":["","","",""],
+"nonVegRestaurants":["","","",""],
 "hotels":[
-
 {
 "name":"",
 "location":"",
 "price":0
 },
-
 {
 "name":"",
 "location":"",
 "price":0
 },
-
 {
 "name":"",
 "location":"",
 "price":0
 }
-
 ],
-
 "budget":{
 "travel":0,
 "hotel":0,
 "food":0,
 "shopping":0,
-"total":0
+"total":0,
 "travellers":${people}
 },
-
 "dayWisePlan":[
-
 {
 "day":"Day 1",
 "morning":"",
 "afternoon":"",
 "evening":""
 }
-
 ],
-
-"travelTips":[
-"",
-"",
-"",
-""
-]
-
+"travelTips":["","","",""]
 }
 
 Generate exactly ${days} objects inside dayWisePlan.
-
 `;
 
+        console.log("Sending request to Groq...");
 
+        const completion = await groq.chat.completions.create({
+            model: "llama-3.1-8b-instant",
+            temperature: 0.3,
+            messages: [
+                {
+                    role: "user",
+                    content: prompt
+                }
+            ]
+        });
 
+        let reply = completion.choices[0].message.content;
 
-const completion =
-await groq.chat.completions.create({
+        console.log("RAW AI RESPONSE:");
+        console.log(reply);
 
+        reply = reply
+            .replace(/```json/g, "")
+            .replace(/```/g, "")
+            .trim();
 
-model:"llama-3.1-8b-instant",
+        let data = JSON.parse(reply);
 
+        data.title = `${destination} Trip Planner`;
 
-temperature:0,
+        return res.json({
+            reply: JSON.stringify(data)
+        });
+            } catch (error) {
 
+        console.error("========== SERVER ERROR ==========");
+        console.error(error);
 
-messages:[
+        if (error.response) {
+            console.error(error.response.data);
+        }
 
-{
+        return res.status(500).json({
+            message: error.message || "Internal Server Error"
+        });
 
-role:"user",
-
-content:prompt
-
-}
-
-]
-
-
-});
-
-
-
-let reply =
-completion
-.choices[0]
-.message
-.content;
-
-
-
-console.log("AI RESPONSE:",reply);
-
-
-
-// remove markdown if any
-
-reply =
-reply
-.replace(/```json/g,"")
-.replace(/```/g,"")
-.trim();
-
-
-
-
-// Force title again
-
-let data =
-JSON.parse(reply);
-
-
-data.title =
-`${destination} Trip Planner`;
-
-
-
-res.json({
-
-reply:JSON.stringify(data)
+    }
 
 });
 
+// ===============================
+// START SERVER
+// ===============================
 
+const PORT = process.env.PORT || 3000;
 
-}
-
-
-catch(error){
-
-
-console.log(error);
-
-
-res.status(500).json({
-
-reply:"AI ERROR"
-
-});
-
-
-}
-
-
-
-});
-
-
-
-
-
-app.listen(3000,()=>{
-
-
-console.log("AI Server running on port 3000");
-
-
+app.listen(PORT, () => {
+    console.log(`AI Server running on port ${PORT}`);
 });
