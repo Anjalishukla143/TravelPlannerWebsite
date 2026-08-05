@@ -13,7 +13,17 @@ app.use(express.static(__dirname));
 
 app.use("/videos", express.static(path.join(__dirname, "videos")));
 app.use(express.static(path.join(__dirname,"frontend")));
+app.get("/test-videos", (req,res)=>{
+    const fs = require("fs");
 
+    const videoPath = path.join(__dirname,"videos");
+
+    res.json({
+        dirname: __dirname,
+        exists: fs.existsSync(videoPath),
+        files: fs.existsSync(videoPath) ? fs.readdirSync(videoPath).slice(0,10) : []
+    });
+});
 app.get("/",(req,res)=>{
     res.sendFile(
         path.join(__dirname,"frontend","index.html")
