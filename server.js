@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -8,7 +9,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname)));
 // ===============================
 // GROQ SETUP
 // ===============================
@@ -17,13 +18,9 @@ const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
 
-// ===============================
-// TEST ROUTE
-// ===============================
 
-app.get("/", (req, res) => {
-    res.send("AI Travel Planner Backend Running...");
-});
+
+
 
 // ===============================
 // AI ROUTE
@@ -179,4 +176,9 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`AI Server running on port ${PORT}`);
+});
+app.get("/", (req,res)=>{
+    res.sendFile(
+        path.join(__dirname,"frontend","index.html")
+    );
 });
